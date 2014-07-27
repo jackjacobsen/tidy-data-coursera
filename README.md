@@ -1,6 +1,6 @@
 tidy-data-coursera
 ==================
-This script (run analysis.R) merges two data sets, which are then cleaned up and summarized which are then outputted to a new file (tidy.txt).
+This script (run analysis.R) merges two data sets, which are then cleaned up, averaged and outputted to a new file (tidy.txt).
 
 The script can be laid out in these main steps:
 
@@ -21,4 +21,4 @@ To open the tidy datafile in the original format enter these two commands (in R)
 tidy <- read.table("./tidy.txt")
 tidy$Subject <- factor(tidy$Subject)
 
-(In hindsight, the tidy$Subject variable should not have been numeric).
+(In hindsight I can see that the tidy$Subject variable should have been a character)
